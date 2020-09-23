@@ -26,6 +26,14 @@ class Gettest(APIView):
         return Response(jsdic)
 """
 def testapi(request):
-    dic={"한글":223}
+    dic={"version": "2.0",
+            "resultCode": "OK",
+            "output":
+             {
+                "datetime": "오늘",
+                "test": "테에스트",
+                "response": "더럽게 안되네 씨발거",
+            }
+         }
 
     return JsonResponse(dic)
