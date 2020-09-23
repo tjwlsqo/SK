@@ -25,15 +25,16 @@ class Gettest(APIView):
         print(jsdic)
         return Response(jsdic)
 """
+
+
 def testapi(request):
-    dic={"version": "2.0",
-            "resultCode": "OK",
-            "output":
-             {
-                "datetime": "오늘",
-                "test": "테에스트",
-                "response": "더럽게 안되네 씨발거",
-            }
-         }
+    dic = {"version": "2.0",
+           "resultCode": "hello",
+           "output":
+               {
+                   "hello":"OK",
+                   "response": "존나안된다",
+               }
+           }
 
     return JsonResponse(dic)
